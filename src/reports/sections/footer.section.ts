@@ -7,7 +7,7 @@ export const footerSecction = (currentPage:number, pageCount:number): Content =>
       style:{
         bold:true,
         alignment:'center',
-        fontSize:14
+        fontSize:12
       }
     }
 }
