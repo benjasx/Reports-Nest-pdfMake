@@ -5,12 +5,13 @@ const logo: Content = {
   image: 'src/assets/bms.png',
   width: 100,
   height: 100,
-  margin: [30, 10, 0, 0],
+
 };
 
 const currentDate: Content = {
   text: DateFormatter.getDDMMMMYYYY(new Date()),
   alignment: 'right',
+  fontSize: 12,
   
 };
 
@@ -54,6 +55,6 @@ export const headerSection = (options: HeaderOptions): Content => {
     : '';
 
   return {
-    columns: [headerLogo, headerTitle, { width: 150, text: headerDate,  margin: [0,50,40,0], bold:true}],
+    columns: [headerLogo, headerTitle, { width: 100, text: headerDate,  margin: [0,30,10,0], bold:true}],
   };
 };
